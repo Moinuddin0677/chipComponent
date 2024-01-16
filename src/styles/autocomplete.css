@@ -1,0 +1,77 @@
+.autocomplete-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.autocomplete-gutter {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  border: 1px solid #ccc;
+  border-bottom: 2px solid #1b96ff;
+  border-radius: 5px;
+}
+
+.autocomplete-input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.autocomplete-input:focus {
+  border: 2px solid #1b96ff;
+}
+
+.chip {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.chip-close {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.option {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
